@@ -1,0 +1,28 @@
+.Facebook{
+    font-size: 35px;
+    margin-top: 300px;
+    margin-left:300px;
+}
+.login
+{
+    width: 400px;
+    margin-left: 900px;
+    margin-top: -150px;
+    padding: 10px;
+    border: 1px solid gray;
+    .Email{
+    width: 217px;
+    padding: 10px;
+    margin: 10px;
+    }
+    .password{
+       width:217px; 
+       padding: 10px;
+       margin: 10px;
+    }
+    .button{
+        padding: 10px;
+        width: 130px;
+        margin: 15px;
+    }
+}

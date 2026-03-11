@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <style>
+        .main-header{
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 60px;
+            gap: 100px;
+        }
+        .nav-list{
+            display: flex;
+            list-style: none;
+            gap: 180px;
+            align-items: center;
+        }
+        .image{
+            display: flex;
+            justify-content: center;
+            width: 1500px;
+            height: 550px;
+        }
+        .nav-list a{
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .nav-list > li>a:hover{
+            background-color: #900fe3;
+            color: aliceblue;
+        }
+        .dropdown{
+            position: relative;
+        }
+        .dropdown-menu{
+            position: absolute;
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        .dropdown-menu li a {
+            display: block;
+            padding: 10px;
+        }
+        .dropdown-menu li a:hover{
+            background-color: #900fe3;
+            color: aliceblue;
+            padding-left: 20px;
+        }        
+
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <a href="" class="logo">
+            <img src="logo.jpg" width="160px" height="100px">
+        </a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li class="dropdown"><a href="carerr.html">Career</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="carerr.html">Leader of the Opposition (1999-2004)</a></li>
+                        <li><a href="carerr.html">Chief Ministership (2004–09)</a></li>
+                        <li><a href="carerr.html">Aarogyasri Scheme</a></li>
+                        <li><a href="carerr.html">Second term as the Chief Minister of Andhra Pradesh (2009)</a>
+                    </ul>
+                </li>
+                <li><a href="member.html">Party Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 align="center">Membership Form</h1>
+		<hr>
+		<form>
+			<center>
+			<table cellpadding="15" border="1">
+			<tr>
+			<th><label>Username </label>
+			<input type="text"placeholder="Enter name" required></th></tr>
+			<tr>
+			<th><label>current location </label>
+			<input list="satish"placeholder="Enter current location">
+			<datalist id="satish">
+			<option>Hydrabad</option>
+			<option>Mumbai</option>
+			<option>Chenni</option>
+			<option>Vizag</option>
+			<option>Assam</option>
+			<option>Goa</option>
+			</datalist>
+			</th></tr>
+			<tr>
+			<th><label>Email </label>
+			<input type="Email" placeholder="Enter gmail"required></th></tr>
+			<tr>
+			<th><label>Registred mobile number</label>
+			<input type="text" placeholder="Enter mbl number" required pattern="[6-9]{1}[0-9]{9}"></th></tr>
+			<tr>
+			<th><label>Gender</label>
+			<input type="radio" name ="satish">male
+			<input type="radio" name ="satish">female
+			<input type="radio" name ="satish">perfer not to say
+			</th></tr>
+			<tr>
+			<th><label>Date of Birth</label>
+			<input type="Date"></th></tr>
+			<tr>
+			<th><label> Valid Docments<font color="red">*</font></label>
+			<input type="file" required></th></tr>
+			<tr>
+			<th><label>Ysr Winning Rateing<font color="red">*</font></label>
+			<input type="range" min="0" max="10"></th></tr>
+			<tr>
+			<th><label>Polling Center</label>
+			<select>
+			<option>Sitam</option>
+			<option>Gitam</option>
+			<option>Anits</option>
+			<option>Avanthi</option>
+			</select>
+			</th></tr>						
+			<tr>
+			<th>
+			<div align="center"><font size=15></font>
+			<input type="submit" value="register">
+			<input type="reset" value="cancel">
+			</div>
+			</th>
+			</tr>
+			</table>
+		</center>
+		</form>
+</body>
+</html>
